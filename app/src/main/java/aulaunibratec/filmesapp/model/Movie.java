@@ -7,6 +7,8 @@ import com.google.gson.annotations.SerializedName;
  */
 public class Movie {
 
+    @SerializedName("imdbId")
+    private String imdbId;
     @SerializedName("Title")
     private String title;
     @SerializedName("Year")
@@ -48,7 +50,7 @@ public class Movie {
         return genre;
     }
 
-    public void setGenrer(String genre) {
+    public void setGenre(String genre) {
         this.genre = genre;
     }
 
@@ -98,6 +100,14 @@ public class Movie {
 
     public void setYear(String year) {
         this.year = year;
+    }
+
+    public String getImdbId() {
+        return imdbId;
+    }
+
+    public void setImdbId(String imdbId) {
+        this.imdbId = imdbId;
     }
 
     @Override
